@@ -1,0 +1,188 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav.navbar {
+    width: 100%;
+    color: white;
+    background: rgb(13, 104, 179);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    padding: 0.78rem;
+}
+
+.nav-content h1 {
+    text-align: center;
+    font-size: 2rem;
+    flex-grow: 2;
+}
+
+.nav-content ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-content ul li {
+    border-radius: 4px;
+    padding: 8px;
+    background-color: darkorange;
+}
+
+.nav-content ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+.card h2 {
+    margin: 5px auto;
+}
+
+form .inputs {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    color: gray;
+}
+
+.input-text,
+.input-number {
+    padding: 7px 0;
+    margin: 4px 10px 12px 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+
+
+/* Browser compatibility */
+
+.input-text::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: lightgray;
+}
+
+.input-number::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: lightgray;
+}
+
+.input-number::-moz-placeholder {
+    /* Firefox 19+ */
+    color: lightgray;
+}
+
+.input-text::-moz-placeholder {
+    /* Firefox 19+ */
+    color: lightgray;
+}
+
+
+/*End*/
+
+.btn-submit {
+    background-color: rgb(13, 104, 179);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-group button {
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn-update {
+    background-color: rgb(20, 177, 6);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.btn-delete {
+    background-color: rgb(187, 4, 4);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.separator {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.btn-cancel {
+    background-color: rgb(192, 196, 0);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.total-calories {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.display-meals {
+    list-style-type: none;
+}
+
+.display-meals li {
+    border: 1px solid lightgray;
+    display: flex;
+    padding: 0.7rem;
+}
+
+.display-meals .calorie-value {
+    flex-grow: 1;
+    margin-left: 3px;
+}
+
+.display-meals li i.fa {
+    color: steelblue;
+    text-align: right;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}

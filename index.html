@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>TrackCalorie&copy;</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1>TrackCalorie</h1>
+                <ul>
+                    <li>
+                        <a class='clear-all-btn' href="#">Clear All</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main-display">
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <h2>Add Meal/Food Item</h2>
+                </div>
+                <div class="row add-form">
+                    <form action="#">
+                        <div class="inputs">
+                            <div class="input-group">
+                                <label for="">Meal Name</label>
+                                <input class="input-text name" type="text" name="meal-name" placeholder="Meal Name">
+                            </div>
+                            <div class="input-group">
+                                <label for="">Meal Calorie</label>
+                                <input class="input-number value" type="number" name="calorie-value" placeholder="Meal Calorie">
+                            </div>
+                        </div>
+                        <button class="btn-submit">
+                            <i class="fa fa-plus"></i> ADD MEAL</button>
+                </div>
+                </form>
+                <div class="btn-group hidden">
+                    <button class="btn-update">
+                        <i class="fa fa-pencil"></i> UPDATE</button>
+                    <button class="btn-delete">
+                        <i class="fa fa-trash"></i> DELETE</button>
+                    <div class="separator">
+                        <button class="btn-cancel">
+                            <i class="fa fa-arrow-circle-left"></i> CANCEL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="total-calories">
+                    <p>Total Calories:
+                        <span class="total-c-number">0</span>
+                    </p>
+                </div>
+                <ul class="display-meals">
+                    <li>No items to display</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="./assets/js/modules/itemControler.js"></script>
+    <script src="./assets/js/modules/UIcontroler.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
