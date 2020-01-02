@@ -13,7 +13,8 @@ const ItemControler = (function () {
             }
         },
         removeItem: function (itemId) {
-            this.items = this.items.filter(i => i.id !== parseInt(itemId));
+            this.items = this.items.filter(i => parseInt(i.id) !== parseInt(itemId));
+            console.log(this.items);
             localStorage.setItem('items', JSON.stringify(this.items));
         },
         removeAllItems: function () {
@@ -27,7 +28,7 @@ const ItemControler = (function () {
             if ((data.name.trim() !== "") && (data.value !== null)) {
                 const items = this.getItems();
                 const _items = items.map(e => {
-                    if (e.id === parseInt(item.id)) {
+                    if (parseInt(e.id) === parseInt(item.id)) {
                         return item = data;
                     } else {
                         return e;

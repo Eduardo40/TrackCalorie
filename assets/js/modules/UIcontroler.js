@@ -50,6 +50,9 @@ const UI = (function (Items) {
         cancelBtn: function () {
             this.clearInputFields();
             this.hideButtons();
+        },
+        displayError: function(error) {
+            alert(error)
         }
     }
 

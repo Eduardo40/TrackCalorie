@@ -12,6 +12,12 @@
         e.preventDefault();
         const itemName = e.target[0].value; //item name
         const itemValue = e.target[1].valueAsNumber; // item value
+        console.log(itemValue);
+        if(itemName.length === 0 || itemValue === 0){
+            UI.displayError("Please fill out fields.\nNote: calories can't be 0");
+            return;
+        }
+        console.log(itemName,itemValue);
         ItemControler.addItem({
             name: itemName,
             value: itemValue
